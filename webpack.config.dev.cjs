@@ -101,4 +101,4 @@ const moduleConfig={
     }
   }
 };
-module.exports=  [moduleConfig,aframeConfig];
+module.exports=  [aframeConfig];//moduleConfig,
