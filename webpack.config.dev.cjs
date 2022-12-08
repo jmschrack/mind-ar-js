@@ -4,10 +4,11 @@ const path =require('path');
 
 const aframeConfig={
   entry: {
-    'mindar-image-aframe': './src/image-target/aframe.js',
-    'mindar-face-aframe': './src/face-target/aframe.js'    
+    'mindar-image-aframe': './src/image-target/aframe.mjs',
+    'mindar-face-aframe': './src/face-target/aframe.mjs'    
   },
   mode: 'development',
+  target:'web',
   devtool: 'inline-source-map',
   output: {
     filename: '[name].js',

@@ -1,12 +1,16 @@
 import "@mediapipe/face_mesh";
+import * as mpFaceMesh from "@mediapipe/face_mesh";
+if(mpFaceMesh.FaceMesh)
+  var FaceMesh=mpFaceMesh.FaceMesh;
 
 class FaceMeshHelper {
   constructor() {
     this.detectResolve = null;
-
+    
     this.faceMesh = new FaceMesh({locateFile: (file) => {
       return `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4/${file}`;
     }});
+  
 
     this.faceMesh.setOptions({
       maxNumFaces: 1,
