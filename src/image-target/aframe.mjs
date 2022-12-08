@@ -1,5 +1,5 @@
 //const {Controller, UI} = window.MINDAR.IMAGE;
-import {Controller,UI} from './index.js'
+import {Controller,UI} from 'mindar-image';
 
 AFRAME.registerSystem('mindar-image-system', {
   container: null,

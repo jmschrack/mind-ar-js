@@ -6,14 +6,15 @@
   <script type="importmap">
   {
     "imports": {
-      "three": "https://unpkg.com/three@0.136.0/build/three.module.js"
+      "three": "https://unpkg.com/three@0.136.0/build/three.module.js",
+      "three/addons/":"https://unpkg.com/three@0.136.0/examples/jsm/"
     }
   }
 </script>
     <script src="../../dist-dev/mindar-face-three.js" type="module"></script>
 
     <script type="module">
-      import { CSS3DObject } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/renderers/CSS3DRenderer.js';
+      import { CSS3DObject } from 'three/addons/renderers/CSS3DRenderer.js';
       import * as THREE from 'three';
       //const THREE = window.MINDAR.FACE.THREE;
       const mindarThree = new window.MINDAR.FACE.MindARThree({

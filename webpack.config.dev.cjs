@@ -32,6 +32,10 @@ const aframeConfig={
     ],
   },
   resolve: {
+    alias:{
+      "mindar-face":path.resolve(__dirname, 'dist-dev/mindar-face.cjs'),
+      "mindar-image":path.resolve(__dirname, 'dist-dev/mindar-image.cjs'),
+    },
     fallback: {
       fs: false,
       path: false,
