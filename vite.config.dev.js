@@ -11,7 +11,7 @@ export default defineConfig({
         lib: {
             fileName:"[name]",
             entry:'index.js',
-            formats:['es']
+            formats:['es','cjs']
         },
         rollupOptions:{
             external:['three','three/examples/jsm/'],
